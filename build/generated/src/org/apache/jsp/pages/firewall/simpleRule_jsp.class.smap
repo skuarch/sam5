@@ -1,0 +1,16 @@
+SMAP
+simpleRule_jsp.java
+JSP
+*S JSP
+*F
++ 0 simpleRule.jsp
+pages/firewall/simpleRule.jsp
+*L
+5,9:54
+13:105,5
+13,2:65
+14:123,5
+14,6:69
+19:141,5
+19,11:77
+*E

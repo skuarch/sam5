@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>   
+    
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources" value="model.resources.i18n.application" />
+    <constant name="struts.i18n.reload" value="true" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.serve.static.browserCache" value="false" />
+    <constant name="struts.configuration.xml.reload" value="true" />
+    <constant name="struts.ognl.enableExpressionCache" value="false" />       
+    
+    <!-- servlets -->        
+    <constant name="struts.action.excludePattern" value="/alarms,/registerServer" />
+    
+    <package name="default" extends="struts-default">       
+        
+        <!-- interceptors -->
+        <interceptors>   
+                     
+            <interceptor name="LoginInterceptor" class="interceptors.LoginInterceptor"/>
+            
+            <interceptor-stack name="defaultLogintStack">
+                <interceptor-ref name="LoginInterceptor">
+                    <param name="validActions">
+                        authentication,login,alarms,alarmDispatcher,registerServer
+                    </param>
+                </interceptor-ref>
+                <interceptor-ref name="defaultStack" />
+                <interceptor-ref name="timer" />
+                <interceptor-ref name="logger" />
+            </interceptor-stack>
+            
+        </interceptors>        
+        
+        <default-interceptor-ref name="defaultLogintStack" />
+        
+        <global-results>
+            <result name="login">/pages/application/login.jsp</result>                        
+            <result name="expiredSession">/pages/application/expiredSession.jsp</result>                        
+        </global-results>  
+        
+        <!-- actions -->        
+        <action name="advancedRule">
+            <result name="success">/pages/firewall/advancedRule.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="advancedRuleForm" class="actions.firewall.AdvancedRuleForm">
+            <result name="success">/pages/firewall/advancedRuleForm.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="alarmDashboard" class="">
+            <result name="success">/pages/alarms/alarmDashboard.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+        </action>
+        
+        <action name="alarmDashboardTable" class="actions.alarms.AlarmDashboardTable">
+            <result name="success">/pages/alarms/alarmDashboardTable.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+        </action>
+        
+        <action name="alarmDispatcher" class="actions.alarms.AlarmDispatcher"/>        
+        
+        <action name="appendAdvancedRule" class="actions.firewall.AppendAdvancedRule">            
+            <result name="success">/pages/firewall/appendAdvancedRule.jsp</result>
+            <result name="input">/pages/firewall/appendAdvancedRule.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+        </action>        
+        
+        <action name="authentication" class="actions.application.Authentication">
+            <result name="success" type="redirectAction">alarmDashboard</result>
+            <result name="error">/pages/application/error.jsp</result>            
+            <result name="input">/pages/application/login.jsp</result>
+        </action>
+        
+        <action name="blockWebsite">
+            <result name="success">/pages/firewall/blockWebsite.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action> 
+        
+        <action name="chooseServer">
+            <result name="success">/pages/servers/chooseServer.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="createPreconfiguredRule" class="actions.firewall.CreatePreconfiguredRule">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="input">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="deleteFirewallRule" class="actions.firewall.DeleteFirewallRule">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="input">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="firewall">
+            <result name="success">/pages/firewall/firewall.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="firewallStatus" class="actions.firewall.FirewallStatus">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="login">
+            <result name="success">/pages/application/login.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/application/login.jsp</result>
+        </action> 
+        
+        <action name="logout" class="actions.application.Logout">
+            <result name="success">/pages/application/logout.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>
+            <result name="input">/pages/application/logout.jsp</result>
+        </action>
+        
+        <action name="movePosition" class="actions.firewall.MovePosition">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="input">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="preconfiguredRule">
+            <result name="success">/pages/firewall/preconfiguredRule.jsp</result> 
+            <result name="error">/pages/application/error.jsp</result>
+        </action>
+        
+        <action name="responseRule" class="actions.firewall.ResponseRule">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="input">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="resetRule" class="actions.firewall.ResetRule">
+            <result name="success">/pages/application/login.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="resetFirewall" class="actions.firewall.ResetFirewall">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="rulesTable" class="actions.firewall.RulesTable">
+            <result name="success">/pages/firewall/rulesTable.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="rulesStatus">
+            <result name="success">/pages/firewall/rulesStatus.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="rulesStatusInterval" class="actions.firewall.RulesStatusInterval">
+            <result name="success">/pages/firewall/rulesStatusInterval.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="servers" class="actions.servers.Servers">
+            <result name="success">/pages/servers/servers.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="serversTable" class="actions.servers.ServersTable">
+            <result name="success">/pages/servers/serversTable.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="simpleRule">
+            <result name="success">/pages/firewall/simpleRule.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="switcher" class="actions.application.Switcher">
+            <result name="success" type="redirectAction">${nextAction}</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="trafficRule" class="actions.firewall.TrafficRule">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>                
+                                                                                                       
+    </package>    
+    
+</struts>

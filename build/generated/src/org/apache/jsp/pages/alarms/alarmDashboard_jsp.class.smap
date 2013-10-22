@@ -1,0 +1,22 @@
+SMAP
+alarmDashboard_jsp.java
+JSP
+*S JSP
+*F
++ 0 alarmDashboard.jsp
+pages/alarms/alarmDashboard.jsp
+*L
+5,8:60
+12:122,5
+12,2:70
+13:140,5
+13,4:74
+16:158,5
+16,2:80
+17:176,5
+17,4:84
+20:194,5
+20,8:90
+27:212,5
+27,4:100
+*E

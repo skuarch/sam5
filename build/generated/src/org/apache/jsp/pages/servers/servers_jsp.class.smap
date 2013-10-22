@@ -1,0 +1,20 @@
+SMAP
+servers_jsp.java
+JSP
+*S JSP
+*F
++ 0 servers.jsp
+pages/servers/servers.jsp
+*L
+5,9:57
+13:120,5
+13,2:68
+14:138,5
+14,6:72
+19:156,5
+19,5:80
+23:174,5
+23,8:87
+30:192,5
+30,6:97
+*E

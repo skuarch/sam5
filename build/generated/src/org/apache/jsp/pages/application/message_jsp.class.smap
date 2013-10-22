@@ -1,0 +1,11 @@
+SMAP
+message_jsp.java
+JSP
+*S JSP
+*F
++ 0 message.jsp
+pages/application/message.jsp
+*L
+1:54
+2:75,5
+*E
