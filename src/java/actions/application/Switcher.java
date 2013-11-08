@@ -29,7 +29,7 @@ public class Switcher extends ActionSupport {
             
             server = ModelServers.getServer(id);            
 
-            session = ActionContext.getContext().getSession();
+            session = ActionContext.getContext().getSession();            
             session.put("server", server);
             nextAction = action;
             

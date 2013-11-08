@@ -16,7 +16,7 @@ public class HashMapUtilities {
     //==========================================================================
     public static HashMap<String, Object> getHashMapE2E() throws Exception {
 
-        HashMap<String, Object> hm = new HashMap<String, Object>();
+        HashMap<String, Object> hm = new HashMap<>();
         hm.put("host", "");
         hm.put("port", "");
         hm.put("type", "e2e");
@@ -30,7 +30,7 @@ public class HashMapUtilities {
 
     //==========================================================================
     public static HashMap<String, Object> getHashMapPortScanner() throws Exception {
-        HashMap<String, Object> hm = new HashMap<String, Object>();
+        HashMap<String, Object> hm = new HashMap<>();
         hm.put("host", "");
         hm.put("port", "");
         hm.put("type", "port scanner");
@@ -42,12 +42,24 @@ public class HashMapUtilities {
 
     //==========================================================================
     public static HashMap<String, Object> getHashFirewall() throws Exception {
-        HashMap<String, Object> hm = new HashMap<String, Object>();
+        HashMap<String, Object> hm = new HashMap<>();
         hm.put("host", "");
         hm.put("port", "");
         hm.put("type", "firewall");
         //hm.put("table", "");
         hm.put("request", "getRules");
+        hm.put("timeout", ModelServerConfiguration.getConfiguration().getTimeWaitMessage());
+        
+        return hm;
+    }
+    
+    //==========================================================================
+    public static HashMap<String, Object> getHashWebMonitor() throws Exception {
+        HashMap<String, Object> hm = new HashMap<>();
+        hm.put("host", "");
+        hm.put("port", "");
+        hm.put("type", "webMonitor");        
+        hm.put("request", "getTasks");
         hm.put("timeout", ModelServerConfiguration.getConfiguration().getTimeWaitMessage());
         
         return hm;

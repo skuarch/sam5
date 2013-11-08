@@ -569,7 +569,7 @@ function rulesTable() {
     $.ajax({
         url: "rulesTable",
         type: "POST",
-        cache:false,
+        cache: false,
         success: function(data) {
             $("#rulesTable").html(data);
             fooTable();
@@ -603,7 +603,7 @@ function rulesStatusInterval() {
 
         $.ajax({
             url: "rulesStatusInterval",
-            type: "POST",            
+            type: "POST",
             success: function(data) {
                 $("#result").html(data);
             }, error: function() {
@@ -640,10 +640,10 @@ function serversTable() {
 //==============================================================================
 function setStatusFirewall(status) {
 
-    if(status === "enabled"){
+    if (status === "enabled") {
         status = "disabled";
-    }else{
-        status = "enabled";        
+    } else {
+        status = "enabled";
     }
 
     alertify.confirm("do you want to " + status + " the firewall?", function(e) {
@@ -677,3 +677,21 @@ function setStatusFirewall(status) {
 function stopDetailsTrafficRule() {
     clearInterval(intervalDetailsRules);
 } // end stopRulesStatus
+
+//==============================================================================
+function taskTable() {
+
+    $("#result").html(loaderDiv);
+
+    $.ajax({
+        url: "taskTable",
+        type: "POST",
+        success: function(data) {alert(data);
+            $("#result").html(data);
+        }, error: function() {
+            errorMessage(standartError);
+        }
+
+    });
+
+} // end taskTable

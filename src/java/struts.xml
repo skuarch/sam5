@@ -185,10 +185,20 @@
             <result name="error">/pages/application/error.jsp</result>            
         </action>
         
+        <action name="taskTable" class="actions.webMonitor.TaskTable">
+            <result name="success">/pages/webMonitor/taskTable.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
         <action name="trafficRule" class="actions.firewall.TrafficRule">
             <result name="success">/pages/application/message.jsp</result>
             <result name="error">/pages/application/error.jsp</result>            
-        </action>                
+        </action>
+        
+        <action name="webMonitor">
+            <result name="success">/pages/webMonitor/webMonitor.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>                 
                                                                                                        
     </package>    
     

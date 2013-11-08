@@ -91,12 +91,9 @@ public class RulesTable extends ActionSupport {
                 arraySlots = returnedJson.getString("slots").toString().split(",");
                 description = returnedJson.getString("descriptions").toString().split(",");
                 slots = new ArrayList();
-
-                //fill the slot with arrays
-                for (int i = 0; i < arraySlots.length; i++) {
-
-                    slots.add(arraySlots[i].split("-"));
-
+                
+                for (String arraySlot : arraySlots) {
+                    slots.add(arraySlot.split("-"));
                 }
 
             }
