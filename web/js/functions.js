@@ -686,7 +686,7 @@ function taskTable() {
     $.ajax({
         url: "taskTable",
         type: "POST",
-        success: function(data) {alert(data);
+        success: function(data) {
             $("#result").html(data);
         }, error: function() {
             errorMessage(standartError);

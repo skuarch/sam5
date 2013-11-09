@@ -48,10 +48,12 @@ public class TaskTable extends ActionSupport{
             returnedJson = RestfulClientWrapper.sendReceiveString(new JSONObject(hm).toString()); 
             
             if (JSONUtilities.checkErrorJson(returnedJson)) {
+                
                 js = "alertify.alert('error: " + returnedJson.getString("error") + "')";
+                
             }else{
             
-                
+                System.out.println("moos: " + returnedJson);
                 
             }            
             
@@ -76,5 +78,21 @@ public class TaskTable extends ActionSupport{
         return Action.SUCCESS;
         
     } // end execute    
+
+    public String getJs() {
+        return js;
+    }
+
+    public void setJs(String js) {
+        this.js = js;
+    }
+
+    public int getRows() {
+        return rows;
+    }
+
+    public void setRows(int rows) {
+        this.rows = rows;
+    }    
     
 } // end class
