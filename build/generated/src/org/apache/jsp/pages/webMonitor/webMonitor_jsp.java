@@ -106,7 +106,7 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\n");
       out.write("                    <ul class=\"nav navbar-nav\">\n");
       out.write("                        <li>\n");
-      out.write("                            <a href=\"advancedRule\">\n");
+      out.write("                            <a href=\"createTaskForm\">\n");
       out.write("                                ");
       if (_jspx_meth_s_text_1(_jspx_page_context))
         return;

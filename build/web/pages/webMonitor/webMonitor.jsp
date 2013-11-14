@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="advancedRule">
+                            <a href="createTaskForm">
                                 <s:text name="text.175" />
                             </a>
                         </li>                                                

@@ -1,5 +1,8 @@
 package model.util;
 
+import java.util.Arrays;
+import java.util.List;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -28,9 +31,8 @@ public class JSONUtilities {
     public static boolean validateJson(JSONObject json, String... fields) throws Exception {
 
         boolean flag = false;
-
-        for (int i = 0; i < fields.length; i++) {
-            if (!json.has(fields[i]) || json.getString(fields[i]).length() < 1) {
+        for (String field : fields) {
+            if (!json.has(field) || json.getString(field).length() < 1) {
                 flag = false;
                 break;
             } else {
@@ -55,5 +57,19 @@ public class JSONUtilities {
         return flag;
 
     } // end checkErrorJson
-    
+
+    //==========================================================================
+    public static List jsonArrayToArrayList(JSONArray jsona) {
+
+        String jsonString = jsona.toString();
+        List list = null;
+        jsonString = jsonString.replace("[", "");
+        jsonString = jsonString.replace("]", "");
+        jsonString = jsonString.replace("\"", "");
+        list = Arrays.asList(jsonString.split(","));
+
+        return list;
+
+    } // end   
+
 } // end class

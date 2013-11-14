@@ -84,6 +84,16 @@
             <result name="error">/pages/application/error.jsp</result>            
         </action> 
         
+        <action name="createTask" class="actions.webMonitor.CreateTask">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="createTaskForm">
+            <result name="success">/pages/webMonitor/createTaskForm.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
         <action name="chooseServer">
             <result name="success">/pages/servers/chooseServer.jsp</result>
             <result name="error">/pages/application/error.jsp</result>            
