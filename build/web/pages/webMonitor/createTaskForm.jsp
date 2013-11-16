@@ -102,23 +102,22 @@
                                         </label>
                                         <input type="text" class="form-control" name="timeout" id="timeout" placeholder="<s:property value="getText('text.195')"/>" tabindex="5">
                                     </div>
-                                    <!--<div class="form-group">
-                                        <label for="email">
-                                            <s:text name="text.192"/>
-                                        </label>                                    
-                                        <input type="text" class="form-control" name="email" id="email" placeholder="<s:property value="getText('task.form.create.notification.email.placeholder')"/>" tabindex="5">
-                                    </div>
                                     <div class="form-group">
-                                        <label for="sms">
-                                            <s:text name="text.193"/>
-                                        </label>                                    
-                                        <input type="text" class="form-control" name="sms" id="sms" placeholder="<s:property value="getText('task.form.create.notification.sms.placeholder')"/>" tabindex="5">
-                                    </div>-->
+                                        <label for="alarmLevel">
+                                            <s:text name="text.210"/>
+                                        </label>
+                                        <select name="alarmLevel" id="alarmLevel" class="btn-block form-group form-control" tabindex="6">
+                                            <option value="0">no alarm</option>
+                                            <option value="1">info</option>
+                                            <option value="2">warning</option>
+                                            <option value="3">danger</option>
+                                        </select>
+                                    </div>  
                                     <div class="form-group">
                                         <label for="method">
                                             <s:text name="text.191"/>
                                         </label>
-                                        <select name="method" id="method" class="btn-block form-group" tabindex="6">
+                                        <select name="method" id="method" class="btn-block form-group form-control" tabindex="6">
                                             <option value="GET">GET</option>
                                             <option value="POST">POST</option>                                        
                                         </select>

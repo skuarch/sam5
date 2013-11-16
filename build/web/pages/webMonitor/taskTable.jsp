@@ -28,11 +28,14 @@
                     <s:text name="text.182" />
                 </th>
                 <th data-hide="phone,tablet">
+                    <s:text name="text.180" />
+                </th>
+                <th data-hide="phone,tablet">
                     <s:text name="text.181" />
                 </th>
                 <th data-hide="phone,tablet">
-                    <s:text name="text.180" />
-                </th>                
+                    <s:text name="text.211" />
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -59,6 +62,9 @@
                     </td>
                     <td>
                         <s:property value="timeout[#counter]" />
+                    </td>
+                    <td>
+                        <s:property value="alarmLevel[#counter]" />
                     </td>
                 </tr>
             </s:iterator>

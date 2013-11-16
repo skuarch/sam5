@@ -216,43 +216,57 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                                    </div>\n");
       out.write("                                    <!--<div class=\"form-group\">\n");
       out.write("                                        <label for=\"email\">\n");
-      out.write("                                            ");
+      out.write("                                    ");
       if (_jspx_meth_s_text_10(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("                                        </label>                                    \n");
-      out.write("                                        <input type=\"text\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"");
+      out.write("                                </label>                                    \n");
+      out.write("                                <input type=\"text\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"");
       if (_jspx_meth_s_property_5(_jspx_page_context))
         return;
       out.write("\" tabindex=\"5\">\n");
-      out.write("                                    </div>\n");
-      out.write("                                    <div class=\"form-group\">\n");
-      out.write("                                        <label for=\"sms\">\n");
-      out.write("                                            ");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"form-group\">\n");
+      out.write("                                <label for=\"sms\">\n");
+      out.write("                                    ");
       if (_jspx_meth_s_text_11(_jspx_page_context))
         return;
       out.write("\n");
-      out.write("                                        </label>                                    \n");
-      out.write("                                        <input type=\"text\" class=\"form-control\" name=\"sms\" id=\"sms\" placeholder=\"");
+      out.write("                                </label>                                    \n");
+      out.write("                                <input type=\"text\" class=\"form-control\" name=\"sms\" id=\"sms\" placeholder=\"");
       if (_jspx_meth_s_property_6(_jspx_page_context))
         return;
       out.write("\" tabindex=\"5\">\n");
-      out.write("                                    </div>-->\n");
+      out.write("                            </div>-->\n");
       out.write("                                    <div class=\"form-group\">\n");
-      out.write("                                        <label for=\"method\">\n");
+      out.write("                                        <label for=\"alarmLevel\">\n");
       out.write("                                            ");
       if (_jspx_meth_s_text_12(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                        </label>\n");
-      out.write("                                        <select name=\"method\" id=\"method\" class=\"btn-block form-group\" tabindex=\"6\">\n");
+      out.write("                                        <select name=\"alarmLevel\" id=\"alarmLevel\" class=\"btn-block form-group form-control\" tabindex=\"6\">\n");
+      out.write("                                            <option value=\"0\">no alarm</option>\n");
+      out.write("                                            <option value=\"1\">info</option>\n");
+      out.write("                                            <option value=\"2\">warning</option>\n");
+      out.write("                                            <option value=\"3\">danger</option>\n");
+      out.write("                                        </select>\n");
+      out.write("                                    </div>  \n");
+      out.write("                                    <div class=\"form-group\">\n");
+      out.write("                                        <label for=\"method\">\n");
+      out.write("                                            ");
+      if (_jspx_meth_s_text_13(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                                        </label>\n");
+      out.write("                                        <select name=\"method\" id=\"method\" class=\"btn-block form-group form-control\" tabindex=\"6\">\n");
       out.write("                                            <option value=\"GET\">GET</option>\n");
       out.write("                                            <option value=\"POST\">POST</option>                                        \n");
       out.write("                                        </select>\n");
       out.write("                                    </div>                                \n");
       out.write("                                    <button type=\"reset\" class=\"btn btn-block\" tabindex=\"8\">\n");
       out.write("                                        ");
-      if (_jspx_meth_s_text_13(_jspx_page_context))
+      if (_jspx_meth_s_text_14(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                    </button>\n");
@@ -726,7 +740,7 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_12 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_12.setPageContext(_jspx_page_context);
     _jspx_th_s_text_12.setParent(null);
-    _jspx_th_s_text_12.setName("text.191");
+    _jspx_th_s_text_12.setName("text.210");
     int _jspx_eval_s_text_12 = _jspx_th_s_text_12.doStartTag();
     if (_jspx_th_s_text_12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_12);
@@ -744,13 +758,31 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_13 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_13.setPageContext(_jspx_page_context);
     _jspx_th_s_text_13.setParent(null);
-    _jspx_th_s_text_13.setName("text.195");
+    _jspx_th_s_text_13.setName("text.191");
     int _jspx_eval_s_text_13 = _jspx_th_s_text_13.doStartTag();
     if (_jspx_th_s_text_13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_13);
       return true;
     }
     _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_13);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_14(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_14 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_14.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_14.setParent(null);
+    _jspx_th_s_text_14.setName("text.195");
+    int _jspx_eval_s_text_14 = _jspx_th_s_text_14.doStartTag();
+    if (_jspx_th_s_text_14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_14);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_14);
     return false;
   }
 

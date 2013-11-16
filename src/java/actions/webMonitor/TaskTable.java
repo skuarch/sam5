@@ -31,7 +31,8 @@ public class TaskTable extends ActionSupport{
     private List trigger = null;
     private List status = null;
     private List period = null;
-    private List timeout = null;    
+    private List timeout = null;
+    private List alarmLevel = null;
     
     //==========================================================================
     public TaskTable() {
@@ -68,6 +69,7 @@ public class TaskTable extends ActionSupport{
                 status = JSONUtilities.jsonArrayToArrayList(returnedJson.getJSONArray("status"));
                 period = JSONUtilities.jsonArrayToArrayList(returnedJson.getJSONArray("period"));
                 timeout = JSONUtilities.jsonArrayToArrayList(returnedJson.getJSONArray("timeout"));
+                alarmLevel = JSONUtilities.jsonArrayToArrayList(returnedJson.getJSONArray("alarmLevel"));
                 
             }            
             
@@ -163,6 +165,14 @@ public class TaskTable extends ActionSupport{
 
     public void setTimeout(List timeout) {
         this.timeout = timeout;
+    }
+
+    public List getAlarmLevel() {
+        return alarmLevel;
+    }
+
+    public void setAlarmLevel(List alarmLevel) {
+        this.alarmLevel = alarmLevel;
     }
     
 } // end class

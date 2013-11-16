@@ -205,6 +205,7 @@ function createTask() {
     var method = document.taskForm.method.value;
     var timeout = document.taskForm.timeout.value;
     var period = document.taskForm.period.value;
+    var alarmLevel = document.taskForm.alarmLevel.value;
     /*var email = document.taskForm.email.value;
     var sms = document.taskForm.sms.value;*/
 
@@ -263,7 +264,7 @@ function createTask() {
             return;
         }
     }*/
-    
+    alert(period);
     $.ajax({
         url: "createTask",
         type: "POST",
@@ -273,9 +274,10 @@ function createTask() {
             trigger: trigger,
             method: method,
             timeout: timeout,
-            period: period            
+            period: period,
+            alarmLevel: alarmLevel
         }, success: function(data) {
-            document.taskForm.reset();
+            //document.taskForm.reset();
             alertify.alert(data);
             $("#buttonCreateRunTask").removeAttr("disabled");
         }, error: function() {

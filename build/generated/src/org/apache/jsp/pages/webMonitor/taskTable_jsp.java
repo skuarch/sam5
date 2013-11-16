@@ -225,7 +225,13 @@ public final class taskTable_jsp extends org.apache.jasper.runtime.HttpJspBase
         if (_jspx_meth_s_text_7((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_0, _jspx_page_context))
           return true;
         out.write("\n");
-        out.write("                </th>                \n");
+        out.write("                </th>\n");
+        out.write("                <th data-hide=\"phone,tablet\">\n");
+        out.write("                    ");
+        if (_jspx_meth_s_text_8((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("                </th>\n");
         out.write("            </tr>\n");
         out.write("        </thead>\n");
         out.write("        <tbody>\n");
@@ -378,6 +384,24 @@ public final class taskTable_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
+  private boolean _jspx_meth_s_text_8(javax.servlet.jsp.tagext.JspTag _jspx_th_s_else_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_8 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_8.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_else_0);
+    _jspx_th_s_text_8.setName("text.211");
+    int _jspx_eval_s_text_8 = _jspx_th_s_text_8.doStartTag();
+    if (_jspx_th_s_text_8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_8);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_8);
+    return false;
+  }
+
   private boolean _jspx_meth_s_iterator_0(javax.servlet.jsp.tagext.JspTag _jspx_th_s_else_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -439,6 +463,12 @@ public final class taskTable_jsp extends org.apache.jasper.runtime.HttpJspBase
         out.write("                    <td>\n");
         out.write("                        ");
         if (_jspx_meth_s_property_7((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
+          return true;
+        out.write("\n");
+        out.write("                    </td>\n");
+        out.write("                    <td>\n");
+        out.write("                        ");
+        if (_jspx_meth_s_property_8((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
         out.write("\n");
         out.write("                    </td>\n");
@@ -582,6 +612,24 @@ public final class taskTable_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_7);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_property_8(javax.servlet.jsp.tagext.JspTag _jspx_th_s_iterator_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_8 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_8.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_8.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
+    _jspx_th_s_property_8.setValue("alarmLevel[#counter]");
+    int _jspx_eval_s_property_8 = _jspx_th_s_property_8.doStartTag();
+    if (_jspx_th_s_property_8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_8);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_8);
     return false;
   }
 }

@@ -52,7 +52,7 @@ public class Alarm implements Serializable {
     private AlarmCode code = null;
     @OneToOne
     @JoinColumn(name = "server_id")
-    private Server server = null;
+    private Server server = null;    
 
     //==========================================================================
     public Alarm() {
