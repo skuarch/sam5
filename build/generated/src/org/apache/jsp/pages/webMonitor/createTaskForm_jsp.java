@@ -214,34 +214,10 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
         return;
       out.write("\" tabindex=\"5\">\n");
       out.write("                                    </div>\n");
-      out.write("                                    <!--<div class=\"form-group\">\n");
-      out.write("                                        <label for=\"email\">\n");
-      out.write("                                    ");
-      if (_jspx_meth_s_text_10(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("                                </label>                                    \n");
-      out.write("                                <input type=\"text\" class=\"form-control\" name=\"email\" id=\"email\" placeholder=\"");
-      if (_jspx_meth_s_property_5(_jspx_page_context))
-        return;
-      out.write("\" tabindex=\"5\">\n");
-      out.write("                            </div>\n");
-      out.write("                            <div class=\"form-group\">\n");
-      out.write("                                <label for=\"sms\">\n");
-      out.write("                                    ");
-      if (_jspx_meth_s_text_11(_jspx_page_context))
-        return;
-      out.write("\n");
-      out.write("                                </label>                                    \n");
-      out.write("                                <input type=\"text\" class=\"form-control\" name=\"sms\" id=\"sms\" placeholder=\"");
-      if (_jspx_meth_s_property_6(_jspx_page_context))
-        return;
-      out.write("\" tabindex=\"5\">\n");
-      out.write("                            </div>-->\n");
       out.write("                                    <div class=\"form-group\">\n");
       out.write("                                        <label for=\"alarmLevel\">\n");
       out.write("                                            ");
-      if (_jspx_meth_s_text_12(_jspx_page_context))
+      if (_jspx_meth_s_text_10(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                        </label>\n");
@@ -255,7 +231,7 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                                    <div class=\"form-group\">\n");
       out.write("                                        <label for=\"method\">\n");
       out.write("                                            ");
-      if (_jspx_meth_s_text_13(_jspx_page_context))
+      if (_jspx_meth_s_text_11(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                        </label>\n");
@@ -266,13 +242,13 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("                                    </div>                                \n");
       out.write("                                    <button type=\"reset\" class=\"btn btn-block\" tabindex=\"8\">\n");
       out.write("                                        ");
-      if (_jspx_meth_s_text_14(_jspx_page_context))
+      if (_jspx_meth_s_text_12(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                    </button>\n");
       out.write("                                    <button type=\"button\" id=\"buttonCreateRunTask\" class=\"btn btn-block btn-success\" tabindex=\"7\" onclick=\"createTask();\">\n");
       out.write("                                        ");
-      if (_jspx_meth_s_property_7(_jspx_page_context))
+      if (_jspx_meth_s_property_5(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                    </button>\n");
@@ -281,7 +257,7 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
       out.write("\n");
       out.write("                                    <div class=\"text-danger\">\n");
       out.write("                                        ");
-      if (_jspx_meth_s_property_8(_jspx_page_context))
+      if (_jspx_meth_s_property_6(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                                    </div>\n");
@@ -668,31 +644,13 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_10 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_10.setPageContext(_jspx_page_context);
     _jspx_th_s_text_10.setParent(null);
-    _jspx_th_s_text_10.setName("text.192");
+    _jspx_th_s_text_10.setName("text.210");
     int _jspx_eval_s_text_10 = _jspx_th_s_text_10.doStartTag();
     if (_jspx_th_s_text_10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_10);
       return true;
     }
     _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_10);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_property_5(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:property
-    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_5 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
-    _jspx_th_s_property_5.setPageContext(_jspx_page_context);
-    _jspx_th_s_property_5.setParent(null);
-    _jspx_th_s_property_5.setValue("getText('task.form.create.notification.email.placeholder')");
-    int _jspx_eval_s_property_5 = _jspx_th_s_property_5.doStartTag();
-    if (_jspx_th_s_property_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
-      return true;
-    }
-    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
     return false;
   }
 
@@ -704,31 +662,13 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_11 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_11.setPageContext(_jspx_page_context);
     _jspx_th_s_text_11.setParent(null);
-    _jspx_th_s_text_11.setName("text.193");
+    _jspx_th_s_text_11.setName("text.191");
     int _jspx_eval_s_text_11 = _jspx_th_s_text_11.doStartTag();
     if (_jspx_th_s_text_11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_11);
       return true;
     }
     _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_11);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_property_6(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:property
-    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_6 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
-    _jspx_th_s_property_6.setPageContext(_jspx_page_context);
-    _jspx_th_s_property_6.setParent(null);
-    _jspx_th_s_property_6.setValue("getText('task.form.create.notification.sms.placeholder')");
-    int _jspx_eval_s_property_6 = _jspx_th_s_property_6.doStartTag();
-    if (_jspx_th_s_property_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_6);
-      return true;
-    }
-    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_6);
     return false;
   }
 
@@ -740,7 +680,7 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_12 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_12.setPageContext(_jspx_page_context);
     _jspx_th_s_text_12.setParent(null);
-    _jspx_th_s_text_12.setName("text.210");
+    _jspx_th_s_text_12.setName("text.195");
     int _jspx_eval_s_text_12 = _jspx_th_s_text_12.doStartTag();
     if (_jspx_th_s_text_12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_12);
@@ -750,75 +690,39 @@ public final class createTaskForm_jsp extends org.apache.jasper.runtime.HttpJspB
     return false;
   }
 
-  private boolean _jspx_meth_s_text_13(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:text
-    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_13 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
-    _jspx_th_s_text_13.setPageContext(_jspx_page_context);
-    _jspx_th_s_text_13.setParent(null);
-    _jspx_th_s_text_13.setName("text.191");
-    int _jspx_eval_s_text_13 = _jspx_th_s_text_13.doStartTag();
-    if (_jspx_th_s_text_13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_13);
-      return true;
-    }
-    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_13);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_text_14(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:text
-    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_14 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
-    _jspx_th_s_text_14.setPageContext(_jspx_page_context);
-    _jspx_th_s_text_14.setParent(null);
-    _jspx_th_s_text_14.setName("text.195");
-    int _jspx_eval_s_text_14 = _jspx_th_s_text_14.doStartTag();
-    if (_jspx_th_s_text_14.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_14);
-      return true;
-    }
-    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_14);
-    return false;
-  }
-
-  private boolean _jspx_meth_s_property_7(PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_property_5(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:property
-    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_7 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
-    _jspx_th_s_property_7.setPageContext(_jspx_page_context);
-    _jspx_th_s_property_7.setParent(null);
-    _jspx_th_s_property_7.setValue("getText('text.202')");
-    int _jspx_eval_s_property_7 = _jspx_th_s_property_7.doStartTag();
-    if (_jspx_th_s_property_7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_7);
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_5 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_5.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_5.setParent(null);
+    _jspx_th_s_property_5.setValue("getText('text.202')");
+    int _jspx_eval_s_property_5 = _jspx_th_s_property_5.doStartTag();
+    if (_jspx_th_s_property_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
       return true;
     }
-    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_7);
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
     return false;
   }
 
-  private boolean _jspx_meth_s_property_8(PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_property_6(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:property
-    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_8 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
-    _jspx_th_s_property_8.setPageContext(_jspx_page_context);
-    _jspx_th_s_property_8.setParent(null);
-    _jspx_th_s_property_8.setValue("message");
-    int _jspx_eval_s_property_8 = _jspx_th_s_property_8.doStartTag();
-    if (_jspx_th_s_property_8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_8);
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_6 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_6.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_6.setParent(null);
+    _jspx_th_s_property_6.setValue("message");
+    int _jspx_eval_s_property_6 = _jspx_th_s_property_6.doStartTag();
+    if (_jspx_th_s_property_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_6);
       return true;
     }
-    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_8);
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_6);
     return false;
   }
 

@@ -58,9 +58,8 @@ public class TaskTable extends ActionSupport{
                 
                 js = "alertify.alert('error: " + returnedJson.getString("error") + "')";
                 
-            }else{
-            
-                System.out.println("moos: " + returnedJson);
+            }else{            
+                
                 rows = returnedJson.getInt("rows");
                 names = JSONUtilities.jsonArrayToArrayList(returnedJson.getJSONArray("names"));
                 url = JSONUtilities.jsonArrayToArrayList(returnedJson.getJSONArray("url"));

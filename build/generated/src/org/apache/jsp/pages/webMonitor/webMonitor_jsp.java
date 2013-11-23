@@ -112,7 +112,15 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
         return;
       out.write("\n");
       out.write("                            </a>\n");
-      out.write("                        </li>                                                \n");
+      out.write("                        </li>\n");
+      out.write("                        <li>\n");
+      out.write("                            <a href=\"taskSettings\">\n");
+      out.write("                                ");
+      if (_jspx_meth_s_text_2(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                            </a>\n");
+      out.write("                        </li>\n");
       out.write("                    </ul>                                        \n");
       out.write("                </div>\n");
       out.write("            </nav>\n");
@@ -249,6 +257,24 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
       return true;
     }
     _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_2 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_2.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_2.setParent(null);
+    _jspx_th_s_text_2.setName("text.212");
+    int _jspx_eval_s_text_2 = _jspx_th_s_text_2.doStartTag();
+    if (_jspx_th_s_text_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
     return false;
   }
 

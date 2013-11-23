@@ -59,7 +59,7 @@ public class HashMapUtilities {
         hm.put("host", "");
         hm.put("port", "");
         hm.put("type", "webMonitor");        
-        hm.put("request", "getTasks");
+        hm.put("request", "getEnabledTasks");
         hm.put("timeout", ModelServerConfiguration.getConfiguration().getTimeWaitMessage());
         
         return hm;

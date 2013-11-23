@@ -94,6 +94,11 @@
             <result name="error">/pages/application/error.jsp</result>            
         </action>
         
+        <action name="changeStatusTask" class="actions.webMonitor.ChangeStatusTask">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
         <action name="chooseServer">
             <result name="success">/pages/servers/chooseServer.jsp</result>
             <result name="error">/pages/application/error.jsp</result>            
@@ -192,6 +197,16 @@
         
         <action name="switcher" class="actions.application.Switcher">
             <result name="success" type="redirectAction">${nextAction}</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="taskSettings">
+            <result name="success">/pages/webMonitor/taskSettings.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
+        <action name="taskSettingsTable" class="actions.webMonitor.TaskSettingsTable">
+            <result name="success">/pages/webMonitor/taskSettingsTable.jsp</result>
             <result name="error">/pages/application/error.jsp</result>            
         </action>
         

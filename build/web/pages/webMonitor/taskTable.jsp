@@ -4,7 +4,7 @@
 <s:if test="rows < 1">    
 
     <div class="alert alert-info">
-        <s:text name="firewall.rules.no.data" />
+        <s:text name="text.222" />
     </div>    
 
 </s:if>

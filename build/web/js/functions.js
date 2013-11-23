@@ -176,6 +176,37 @@ function appendAdvancedRule() {
 } // end appendAdvancedRule
 
 //==============================================================================
+function changeStatusTask(id) {
+
+    alertify.confirm("do you want to change the status?", function(e) {
+
+        if (e) {
+
+            $("#result").html(loaderDiv);
+
+            $.ajax({
+                url: "changeStatusTask",
+                type: "POST",
+                data: {
+                    id: id
+                },
+                success: function(data) {
+                    alertify.log(data);
+                    taskSettingsTable();
+                }, error: function() {
+                    errorMessage(standartError);
+                }
+
+            });
+
+        } else {
+            // user clicked "cancel"
+        }
+    });
+
+} // end changeStatusTask
+
+//==============================================================================
 function confirmAppendRule(json) {
 
     if (json.created) {
@@ -197,7 +228,7 @@ function confirmAppendRule(json) {
 //==============================================================================
 function createTask() {
 
-    
+
     $("#buttonCreateRunTask").attr("disabled", "disabled");
     var name = document.taskForm.name.value;
     var urls = document.taskForm.urls.value;
@@ -207,7 +238,7 @@ function createTask() {
     var period = document.taskForm.period.value;
     var alarmLevel = document.taskForm.alarmLevel.value;
     /*var email = document.taskForm.email.value;
-    var sms = document.taskForm.sms.value;*/
+     var sms = document.taskForm.sms.value;*/
 
     //validation
     if (name == "" || name == undefined) {
@@ -247,23 +278,23 @@ function createTask() {
     }
 
     /*if (email == "" && sms == "") {
-        alertify.alert("please choose a notification way");
-        return;
-    }
-
-    if (email != "") {
-        if (email.search("@") == -1) {
-            alertify.alert("e-mail incorrect");
-            return;
-        }
-    }
-
-    if (sms != "") {
-        if (sms.length < 8) {
-            alertify.alert("sms incorrect");
-            return;
-        }
-    }*/
+     alertify.alert("please choose a notification way");
+     return;
+     }
+     
+     if (email != "") {
+     if (email.search("@") == -1) {
+     alertify.alert("e-mail incorrect");
+     return;
+     }
+     }
+     
+     if (sms != "") {
+     if (sms.length < 8) {
+     alertify.alert("sms incorrect");
+     return;
+     }
+     }*/
     alert(period);
     $.ajax({
         url: "createTask",
@@ -773,6 +804,25 @@ function setStatusFirewall(status) {
 function stopDetailsTrafficRule() {
     clearInterval(intervalDetailsRules);
 } // end stopRulesStatus
+
+
+//==============================================================================
+function taskSettingsTable() {
+
+    $("#result").html(loaderDiv);
+
+    $.ajax({
+        url: "taskSettingsTable",
+        type: "POST",
+        success: function(data) {
+            $("#result").html(data);
+            fooTable();
+        }, error: function() {
+            errorMessage(standartError);
+        }
+
+    });
+}
 
 //==============================================================================
 function taskTable() {

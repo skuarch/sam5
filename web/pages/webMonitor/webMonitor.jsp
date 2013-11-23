@@ -42,7 +42,12 @@
                             <a href="createTaskForm">
                                 <s:text name="text.175" />
                             </a>
-                        </li>                                                
+                        </li>
+                        <li>
+                            <a href="taskSettings">
+                                <s:text name="text.212" />
+                            </a>
+                        </li>
                     </ul>                                        
                 </div>
             </nav>
