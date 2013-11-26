@@ -20,7 +20,7 @@
 
         <div class="container">
 
-            <h1>Web MOnitor</h1>
+            <h1><s:text name="text.224"/></h1>
             <hr>
             <s:include value="/pages/application/breadcrumb.jsp"/>            
 

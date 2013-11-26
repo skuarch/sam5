@@ -48,6 +48,11 @@
                                 <s:text name="text.184" />
                             </a>
                         </li>                        
+                        <li>
+                            <a href="taskSettings">
+                                <s:text name="text.212" />
+                            </a>
+                        </li>                       
                     </ul>                                        
                 </div><!-- /.navbar-collapse -->
             </nav>

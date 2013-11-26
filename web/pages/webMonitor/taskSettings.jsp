@@ -45,7 +45,12 @@
                             <a href="webMonitor">
                                 <s:text name="text.184" />
                             </a>
-                        </li>                        
+                        </li>   
+                        <li>
+                            <a href="createTaskForm">
+                                <s:text name="text.175" />
+                            </a>
+                        </li>
                     </ul>                                        
                 </div><!-- /.navbar-collapse -->
             </nav>

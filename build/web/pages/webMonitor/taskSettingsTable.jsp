@@ -37,7 +37,7 @@
                         <s:property value="url[#counter]" />
                     </td>
                     <td>
-                        <button class="btn btn-danger btn-block btn-lg">
+                        <button class="btn btn-danger btn-block btn-lg" onclick="deleteTask(<s:property value="ids[#counter]" />);">
                             <s:text name="text.218"/>
                         </button>
                     </td>

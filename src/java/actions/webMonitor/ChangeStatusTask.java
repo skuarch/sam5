@@ -28,11 +28,14 @@ public class ChangeStatusTask extends ActionSupport {
     public String execute() throws Exception {
 
         HashMap<String, Object> hm = HashMapUtilities.getHashWebMonitor();
-        JSONObject returnedJson = null;
-        message = "huevos puto";
+        JSONObject returnedJson = null;        
 
         try {
 
+            if(id < 1){
+                return Action.SUCCESS;
+            }
+            
             server = SessionUtilities.getServer();
 
             hm.put("request", "changeStatusTask");

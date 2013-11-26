@@ -175,6 +175,36 @@ function appendAdvancedRule() {
 
 } // end appendAdvancedRule
 
+function deleteTask(id) {
+
+    alertify.confirm("do you want to delete the task?", function(e) {
+
+        if (e) {
+
+            $("#result").html(loaderDiv);
+
+            $.ajax({
+                url: "deleteTask",
+                type: "POST",
+                data: {
+                    id: id
+                },
+                success: function(data) {
+                    alertify.log(data);
+                    taskSettingsTable();
+                }, error: function() {
+                    errorMessage(standartError);
+                }
+
+            });
+
+        } else {
+            // user clicked "cancel"
+        }
+    });
+
+}
+
 //==============================================================================
 function changeStatusTask(id) {
 

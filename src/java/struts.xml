@@ -110,6 +110,12 @@
             <result name="error">/pages/application/error.jsp</result>            
         </action>
         
+        <action name="deleteTask" class="actions.webMonitor.DeleteTask">
+            <result name="success">/pages/application/message.jsp</result>
+            <result name="input">/pages/application/message.jsp</result>
+            <result name="error">/pages/application/error.jsp</result>            
+        </action>
+        
         <action name="deleteFirewallRule" class="actions.firewall.DeleteFirewallRule">
             <result name="success">/pages/application/message.jsp</result>
             <result name="input">/pages/application/message.jsp</result>
