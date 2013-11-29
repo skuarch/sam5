@@ -81,7 +81,10 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("        <div class=\"container\">\n");
       out.write("\n");
-      out.write("            <h1>Web MOnitor</h1>\n");
+      out.write("            <h1>");
+      if (_jspx_meth_s_text_0(_jspx_page_context))
+        return;
+      out.write("</h1>\n");
       out.write("            <hr>\n");
       out.write("            ");
       if (_jspx_meth_s_include_3(_jspx_page_context))
@@ -98,7 +101,7 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </button>\n");
       out.write("                    <a class=\"navbar-brand\">\n");
       out.write("                        ");
-      if (_jspx_meth_s_text_0(_jspx_page_context))
+      if (_jspx_meth_s_text_1(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                    </a>\n");
@@ -108,7 +111,7 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <li>\n");
       out.write("                            <a href=\"createTaskForm\">\n");
       out.write("                                ");
-      if (_jspx_meth_s_text_1(_jspx_page_context))
+      if (_jspx_meth_s_text_2(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                            </a>\n");
@@ -116,7 +119,7 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <li>\n");
       out.write("                            <a href=\"taskSettings\">\n");
       out.write("                                ");
-      if (_jspx_meth_s_text_2(_jspx_page_context))
+      if (_jspx_meth_s_text_3(_jspx_page_context))
         return;
       out.write("\n");
       out.write("                            </a>\n");
@@ -206,6 +209,24 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
+  private boolean _jspx_meth_s_text_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_0 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_0.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_0.setParent(null);
+    _jspx_th_s_text_0.setName("text.224");
+    int _jspx_eval_s_text_0 = _jspx_th_s_text_0.doStartTag();
+    if (_jspx_th_s_text_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
+    return false;
+  }
+
   private boolean _jspx_meth_s_include_3(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -224,24 +245,6 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
     return false;
   }
 
-  private boolean _jspx_meth_s_text_0(PageContext _jspx_page_context)
-          throws Throwable {
-    PageContext pageContext = _jspx_page_context;
-    JspWriter out = _jspx_page_context.getOut();
-    //  s:text
-    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_0 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
-    _jspx_th_s_text_0.setPageContext(_jspx_page_context);
-    _jspx_th_s_text_0.setParent(null);
-    _jspx_th_s_text_0.setName("firewall.subnavigation.brand");
-    int _jspx_eval_s_text_0 = _jspx_th_s_text_0.doStartTag();
-    if (_jspx_th_s_text_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
-      return true;
-    }
-    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_0);
-    return false;
-  }
-
   private boolean _jspx_meth_s_text_1(PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -250,7 +253,7 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_1 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_1.setPageContext(_jspx_page_context);
     _jspx_th_s_text_1.setParent(null);
-    _jspx_th_s_text_1.setName("text.175");
+    _jspx_th_s_text_1.setName("firewall.subnavigation.brand");
     int _jspx_eval_s_text_1 = _jspx_th_s_text_1.doStartTag();
     if (_jspx_th_s_text_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_1);
@@ -268,13 +271,31 @@ public final class webMonitor_jsp extends org.apache.jasper.runtime.HttpJspBase
     org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_2 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
     _jspx_th_s_text_2.setPageContext(_jspx_page_context);
     _jspx_th_s_text_2.setParent(null);
-    _jspx_th_s_text_2.setName("text.212");
+    _jspx_th_s_text_2.setName("text.175");
     int _jspx_eval_s_text_2 = _jspx_th_s_text_2.doStartTag();
     if (_jspx_th_s_text_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
       _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
       return true;
     }
     _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_2);
+    return false;
+  }
+
+  private boolean _jspx_meth_s_text_3(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:text
+    org.apache.struts2.views.jsp.TextTag _jspx_th_s_text_3 = (org.apache.struts2.views.jsp.TextTag) _jspx_tagPool_s_text_name_nobody.get(org.apache.struts2.views.jsp.TextTag.class);
+    _jspx_th_s_text_3.setPageContext(_jspx_page_context);
+    _jspx_th_s_text_3.setParent(null);
+    _jspx_th_s_text_3.setName("text.212");
+    int _jspx_eval_s_text_3 = _jspx_th_s_text_3.doStartTag();
+    if (_jspx_th_s_text_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_3);
+      return true;
+    }
+    _jspx_tagPool_s_text_name_nobody.reuse(_jspx_th_s_text_3);
     return false;
   }
 

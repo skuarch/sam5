@@ -29,6 +29,7 @@ public class CreateTask extends ActionSupport {
     private String method = null;    
     private String period = null;
     private int alarmLevel = 0;
+    private int timeout = 0;
 
     //==========================================================================
     @Override
@@ -50,6 +51,7 @@ public class CreateTask extends ActionSupport {
             hm.put("method", method);            
             hm.put("period", period);
             hm.put("alarmLevel", alarmLevel);
+            hm.put("timeout", timeout);
            
             returnedJson = RestfulClientWrapper.sendReceiveString(new JSONObject(hm).toString());
 
@@ -141,5 +143,13 @@ public class CreateTask extends ActionSupport {
     public void setAlarmLevel(int alarmLevel) {
         this.alarmLevel = alarmLevel;
     }    
+
+    public int getTimeout() {
+        return timeout;
+    }
+
+    public void setTimeout(int timeout) {
+        this.timeout = timeout;
+    }
 
 } // end class

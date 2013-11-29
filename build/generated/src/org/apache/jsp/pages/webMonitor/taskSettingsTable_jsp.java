@@ -341,7 +341,10 @@ public final class taskSettingsTable_jsp extends org.apache.jasper.runtime.HttpJ
         out.write("\n");
         out.write("                    </td>\n");
         out.write("                    <td>\n");
-        out.write("                        <button class=\"btn btn-danger btn-block btn-lg\">\n");
+        out.write("                        <button class=\"btn btn-danger btn-block btn-lg\" onclick=\"deleteTask(");
+        if (_jspx_meth_s_property_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
+          return true;
+        out.write(");\">\n");
         out.write("                            ");
         if (_jspx_meth_s_text_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_iterator_0, _jspx_page_context))
           return true;
@@ -411,6 +414,24 @@ public final class taskSettingsTable_jsp extends org.apache.jasper.runtime.HttpJ
     return false;
   }
 
+  private boolean _jspx_meth_s_property_3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_iterator_0, PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  s:property
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_3 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_3.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_iterator_0);
+    _jspx_th_s_property_3.setValue("ids[#counter]");
+    int _jspx_eval_s_property_3 = _jspx_th_s_property_3.doStartTag();
+    if (_jspx_th_s_property_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+      return true;
+    }
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+    return false;
+  }
+
   private boolean _jspx_meth_s_text_5(javax.servlet.jsp.tagext.JspTag _jspx_th_s_iterator_0, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -448,7 +469,7 @@ public final class taskSettingsTable_jsp extends org.apache.jasper.runtime.HttpJ
       do {
         out.write("\n");
         out.write("                            <button class=\"btn btn-primary btn-block btn-lg\" onclick=\"changeStatusTask(");
-        if (_jspx_meth_s_property_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_if_1, _jspx_page_context))
+        if (_jspx_meth_s_property_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_if_1, _jspx_page_context))
           return true;
         out.write(");\">\n");
         out.write("                                ");
@@ -472,21 +493,21 @@ public final class taskSettingsTable_jsp extends org.apache.jasper.runtime.HttpJ
     return false;
   }
 
-  private boolean _jspx_meth_s_property_3(javax.servlet.jsp.tagext.JspTag _jspx_th_s_if_1, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_property_4(javax.servlet.jsp.tagext.JspTag _jspx_th_s_if_1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:property
-    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_3 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
-    _jspx_th_s_property_3.setPageContext(_jspx_page_context);
-    _jspx_th_s_property_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_if_1);
-    _jspx_th_s_property_3.setValue("ids[#counter]");
-    int _jspx_eval_s_property_3 = _jspx_th_s_property_3.doStartTag();
-    if (_jspx_th_s_property_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_4 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_4.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_if_1);
+    _jspx_th_s_property_4.setValue("ids[#counter]");
+    int _jspx_eval_s_property_4 = _jspx_th_s_property_4.doStartTag();
+    if (_jspx_th_s_property_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
       return true;
     }
-    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_3);
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
     return false;
   }
 
@@ -526,7 +547,7 @@ public final class taskSettingsTable_jsp extends org.apache.jasper.runtime.HttpJ
       do {
         out.write("\n");
         out.write("                            <button class=\"btn btn-block btn-lg\" onclick=\"changeStatusTask(");
-        if (_jspx_meth_s_property_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_1, _jspx_page_context))
+        if (_jspx_meth_s_property_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_s_else_1, _jspx_page_context))
           return true;
         out.write(");\">\n");
         out.write("                                ");
@@ -550,21 +571,21 @@ public final class taskSettingsTable_jsp extends org.apache.jasper.runtime.HttpJ
     return false;
   }
 
-  private boolean _jspx_meth_s_property_4(javax.servlet.jsp.tagext.JspTag _jspx_th_s_else_1, PageContext _jspx_page_context)
+  private boolean _jspx_meth_s_property_5(javax.servlet.jsp.tagext.JspTag _jspx_th_s_else_1, PageContext _jspx_page_context)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
     JspWriter out = _jspx_page_context.getOut();
     //  s:property
-    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_4 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
-    _jspx_th_s_property_4.setPageContext(_jspx_page_context);
-    _jspx_th_s_property_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_else_1);
-    _jspx_th_s_property_4.setValue("ids[#counter]");
-    int _jspx_eval_s_property_4 = _jspx_th_s_property_4.doStartTag();
-    if (_jspx_th_s_property_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
-      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
+    org.apache.struts2.views.jsp.PropertyTag _jspx_th_s_property_5 = (org.apache.struts2.views.jsp.PropertyTag) _jspx_tagPool_s_property_value_nobody.get(org.apache.struts2.views.jsp.PropertyTag.class);
+    _jspx_th_s_property_5.setPageContext(_jspx_page_context);
+    _jspx_th_s_property_5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_s_else_1);
+    _jspx_th_s_property_5.setValue("ids[#counter]");
+    int _jspx_eval_s_property_5 = _jspx_th_s_property_5.doStartTag();
+    if (_jspx_th_s_property_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
       return true;
     }
-    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_4);
+    _jspx_tagPool_s_property_value_nobody.reuse(_jspx_th_s_property_5);
     return false;
   }
 

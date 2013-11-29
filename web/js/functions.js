@@ -325,7 +325,7 @@ function createTask() {
      return;
      }
      }*/
-    alert(period);
+    
     $.ajax({
         url: "createTask",
         type: "POST",
