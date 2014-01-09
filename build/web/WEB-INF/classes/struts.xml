@@ -15,7 +15,7 @@
     <constant name="struts.ognl.enableExpressionCache" value="false" />       
     
     <!-- servlets -->        
-    <constant name="struts.action.excludePattern" value="/alarms,/registerServer" />
+    <constant name="struts.action.excludePattern" value="/alarms,/registerServer,/notifications" />
     
     <package name="default" extends="struts-default">       
         
@@ -27,7 +27,7 @@
             <interceptor-stack name="defaultLogintStack">
                 <interceptor-ref name="LoginInterceptor">
                     <param name="validActions">
-                        authentication,login,alarms,alarmDispatcher,registerServer
+                        authentication,login,alarms,alarmDispatcher,registerServer,notifications
                     </param>
                 </interceptor-ref>
                 <interceptor-ref name="defaultStack" />
@@ -150,6 +150,12 @@
             <result name="error">/pages/application/error.jsp</result>            
         </action>
         
+        <!--<action name="notifications" class="actions.webservices.v1.Notifications">                        
+            <result name="success">/pages/application/notifications.jsp</result>
+            <result name="error">/pages/application/notifications.jsp</result>
+            <result name="input">/pages/application/notifications.jsp</result>    
+        </action>-->
+        
         <action name="preconfiguredRule">
             <result name="success">/pages/firewall/preconfiguredRule.jsp</result> 
             <result name="error">/pages/application/error.jsp</result>
@@ -226,10 +232,10 @@
             <result name="error">/pages/application/error.jsp</result>            
         </action>
         
-        <action name="webMonitor">
+        <action name="webMonitor" >
             <result name="success">/pages/webMonitor/webMonitor.jsp</result>
             <result name="error">/pages/application/error.jsp</result>            
-        </action>                 
+        </action>        
                                                                                                        
     </package>    
     

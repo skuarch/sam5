@@ -70,6 +70,17 @@ public class JSONUtilities {
 
         return list;
 
-    } // end   
+    } // end  
+    
+    
+    //==========================================================================
+    public static String getJSONError(String error) {
+
+        if (error == null || error.length() < 1) {
+            error = "unexpected error";
+        }
+
+        return "{\"error\":\"" + error + "\"}";
+    }
 
 } // end class
